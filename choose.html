@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+          <link rel ="stylesheet" type = "text/css"  href =".css">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:#ecb2b8;
+    width: 100%;
+ 
+     
+}
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 6px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+
+.x1{
+    background:url({{ url_for('static', filename = '7.jpg') }}) no-repeat;
+    background-size:cover;
+    height:550px;
+}
+
+.x2{
+    background:url({{ url_for('static', filename = '1.jpg') }}) no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.cont{
+    padding: 30px 60px;
+    text-align:center;
+    background:#5148492e;
+    width:150px;
+    margin-top:50px;
+    margin-left:20px;
+    border-radius:20px;
+}
+
+.ok{
+  padding:10px 20px;
+  margin-top:20px;
+  background:#edcdd0;
+  border:transparent;
+  border-radius:10px
+}
+
+.ok1{
+  padding:10px 20px;
+  margin-top:20px;
+  background:#2a2828;
+  color:white;
+  border:transparent;
+  border-radius:10px
+}
+.main{
+    display :flex;
+    flex-direction:column-reverse;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+  
+.cont{
+    padding: 30px 60px;
+    text-align:center;
+    background:#5148492e;
+    width:150px;
+    margin-top:50px;
+    margin-left:60px;
+    border-radius:20px;
+}
+
+  }
+
+
+@media only screen and (min-width: 700px) and (max-width: 900px)
+{
+  .other{
+    margin-left: 150px;
+  }
+ 
+  .x{
+    padding:0 40px;
+  }
+
+  x1{
+    
+    height:950px;
+}
+
+.x2{
+   
+    height:900px;
+}
+
+.cont{
+    padding: 30px 160px;
+    text-align:center;
+    background:#5148492e;
+    width:150px;
+    margin-top:100px;
+    margin-left:140px;
+    border-radius:20px;
+}
+
+}
+
+@media only screen and (min-width: 905px)
+{
+  
+  .heads{
+
+  }
+  .logo h3{
+    
+    margin-left:30px;
+  }
+ .other{
+   margin-left: 590px;
+ }
+
+ .x{
+   padding: 0 70px;
+ }
+  .x a{
+  margin-left:30px;
+}
+
+.main{
+  flex-direction:row-reverse;
+  justify-content:space-around
+}
+
+.x1{
+ background:url({{ url_for('static', filename = '7.jpg') }}) no-repeat;
+    background-size:cover;
+    height:800px;
+}
+
+.x2{
+ background:url({{ url_for('static', filename = '1.jpg') }}) no-repeat;
+    background-size:cover;
+    height:800px;
+}
+
+.cont{
+    padding: 30px 220px;
+    text-align:center;
+    background:#5148492e;
+    width:150px;
+    margin-top:90px;
+    margin-left:60px;
+    border-radius:20px;
+    margin-right: 60px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="heads">
+<div class ="logo">
+<a href ="/" style="text-decoration:none;">
+<h3>MAITRI</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="/about" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="/choose" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="/remedy" style="text-decoration:none;">
+Remedy </a>
+</div>
+</div>
+</div>
+
+
+
+<div class ="main">
+<div class="x1">
+<div class="cont">
+<h2>PROFFESSIONAL TEST</h2>
+<p>If you are a doctor or have done all the required blood tests and sonography then you can take this test</p>
+<a href ="/test1">
+<button class="ok1">TAKE TEST</button></a>
+</div>
+</div>
+<div class="x2">
+<div class="cont">
+<h2>GENERAL TEST</h2>
+<p>If you are showing symptoms and have delayed periods you can take this test to be sure whether you have PCOS.Further you need to visit Doctor</p>
+<a href="/test">
+<button class="ok">TAKE TEST</button></a>
+</div>
+</div>
+</div>
+
+</body>
+</html>

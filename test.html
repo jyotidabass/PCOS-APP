@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+          
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:transparent;
+    width: 100%;
+ 
+     
+}
+body{
+background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+background-repeat:no-repeat;
+background-size: cover;
+
+
+}
+
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+    margin-top:25px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+.ok{
+    background:#75717a3b;
+    width:200px;
+    padding:20px 40px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:black;
+}
+
+.area{
+     width: 100%;
+    height:600vh;
+    
+   
+}
+
+p{
+color : white;
+margin-top:20px;
+}
+
+input{
+    width:70%;
+    border-radius:10px;
+    padding:6px 30px;
+    background:transparent;
+    border:1px solid #312f2f66;
+    margin-top:10px;
+    text-transform:uppercase;
+}
+
+input[type=submit]{
+    background:#f7f6fd;
+    margin-left:0px;
+    padding:10px;
+}
+input[type=text]{
+    color:black;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 699px) and{max-width:890px}
+{
+.logo{
+  margin-left:50px;
+}
+.x {
+  margin-left:90px;
+}
+img{
+  width:250px;
+}
+.area{
+     width: 100%;
+    height:450vh;
+    
+   
+}
+
+}
+
+@media only screen and (min-width: 900px) 
+{
+  .main{
+    flex-direction:row;
+   
+  }
+  .logo{
+  margin-left:80px;
+}
+.other{
+  margin-left:700px;
+}
+.x {
+  margin-left:90px;
+}
+
+.ok{
+    background:#75717a3b;
+    width:600px;
+    padding:50px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:black;
+
+}
+
+.area{
+     width: 100%;
+    height:450vh;
+    
+   
+}
+
+}
+</style>
+
+         </head>
+<body>
+<div class="area" align="center">
+<div class="heads">
+<div class ="logo">
+<a href ="/" style="text-decoration:none;">
+<h3>MAITRI</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="/about" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="/choose" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="/remedy" style="text-decoration:none;">
+Remedy </a>
+</div>
+</div>
+</div>
+
+ <center><img src="{{ url_for('static', filename = '13.jpg') }}" alt="LOVE YOURSELF FIRST" height="100px" width="150px" style="border-radius:50px; border: 1px solid white; padding:10px;"></center>
+  
+<div class="mains">
+<p> Never forget to love your own body :)</p>
+ <br><br>ALERT: PCOS is a women health issue !
+<div class="photo">
+
+</div>
+    
+
+<div class="ok" align="center">
+ <form method="POST", action="{{url_for('home')}}">
+           <b> 
+What is your age? 
+<br> <input type="text", name='a', placeholder="enter 1"> <br><br>
+
+What is your weight(kg)?
+<br> <input type="text", name='b', placeholder="enter 2"> <br><br>
+
+What is you height(cm)?
+<br> <input type="text", name='c', placeholder="enter 3"> <br><br>
+
+BMI(Height/weight)
+<br><input type="text", name='d', placeholder="enter 4"> <br><br>
+
+Blood Group?(A:11, B:12,O:13 , AB:14, -veA:15,-veB:16,-veO:17, -veAB:18) 
+<br> <input type="text", name='e', placeholder="enter 5"> <br><br>
+
+Periodic Cycle(months)(In how many months do you get periods)
+<br> <input type="text", name='f', placeholder="enter 6"> <br><br>
+
+For how many days your periods lasts(days) 
+<br> <input type="text", name='g', placeholder="enter 7"> <br><br>
+
+Marriage Status (Yrs)
+<br> <input type="text", name='h', placeholder="enter 8"> <br><br>
+
+ANSWER 1 IF YES ELSE 0 !(Only is the questions where (Y/N) is mentioned
+<br><br>
+
+Pregnant(Y/N)
+<br> <input type="text", name='i', placeholder="enter 9"> <br><br>
+
+No of aborptions
+<br> <input type="text", name='j', placeholder="enter 10"> <br><br>
+
+Do you feel Bloated?(Y/N)
+<br> <input type="text", name='k', placeholder="enter 11"> <br><br>
+
+Do you have facial hair growth (Y/N)
+<br> <input type="text", name='l', placeholder="enter 12"> <br><br>
+
+Do you have thin chest hair? (Y/N)
+<br> <input type="text", name='m', placeholder="enter 13"> <br><br>
+
+Hip(inch)
+<br> <input type="text", name='n', placeholder="enter 14"> <br><br>
+
+Waist(inch)
+<br> <input type="text", name='o', placeholder="enter 15"> <br><br>
+
+Waist/Hip Ratio
+<br> <input type="text", name='p', placeholder="enter 16"> <br><br>
+
+ANSWER 1 IF YES ELSE 0 !(Only is the questions where (Y/N) is mentioned
+<br><br>
+difficulty in loosing weight(Y/N)
+<br> <input type="text", name='q', placeholder="enter 17"> <br><br>
+
+Do you have frequent mood swings?(Y/N)
+<br> <input type="text", name='r', placeholder="enter 18"> <br><br>
+
+Do you have anxiety/depression/stress?
+<br> <input type="text", name='s', placeholder="enter 19"> <br><br>
+
+Do you have irregular sleep pattern? (Y/N)
+<br> <input type="text", name='t', placeholder="enter 20"> <br><br>
+
+Did you gained weight?(Y/N)
+<br> <input type="text", name='u', placeholder="enter 21"> <br><br>
+
+Do you have hair growth?(Y/N)
+<br> <input type="text", name='v', placeholder="enter 22"> <br><br>
+
+Is your Skin darkening? (Y/N)
+<br> <input type="text", name='w', placeholder="enter 23"> <br><br>
+
+Do you suffer from Hair loss?(Y/N)
+<br> <input type="text", name='x', placeholder="enter 24"> <br><br>
+
+Do you have Pimples?(Y/N) 
+<br> <input type="text", name='y', placeholder="enter 25"> <br><br>
+
+Do you eat frequently Fast food ?(Y/N)
+<br> <input type="text", name='z', placeholder="enter 26"> <br><br>
+
+Do you do Reg Exercise?(Y/N) 
+<br> <input type="text", name='za', placeholder="enter 27"> <br><br>
+
+
+
+
+
+
+           <input type="submit" , value='Result!' >
+        </form>
+
+
+
+</div>
+</div>
+
+<p>By Dikshita Basu</p>
+ </div >
+
+</body>
+</html>

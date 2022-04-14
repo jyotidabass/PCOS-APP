@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+          <link rel ="stylesheet" type = "text/css"  href =".css">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:#e42f06;
+    width: 100%;
+ 
+     
+}
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 6px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+
+
+
+.main{
+    display :flex;
+    flex-direction:column;
+}
+
+.pic{
+    align-items:center;
+  margin-top:5px;
+  padding:0 0px
+}
+.pic img{
+    width:250px;
+    border:1px solid red;
+    padding:15px
+}
+
+.cont{
+  margin-top: -10px;
+  text-align:center;
+  padding:0 48px;
+    font-family:monospace;
+}
+
+.write h2{
+  font-size:20px;
+  font-family:monospace;
+  color:#e6320c;
+}
+
+.write h1{
+  font-size:18px;
+  font-family:monospace;
+  color:#2860a6;
+}
+
+span{
+  color:#c3ff01;
+}
+
+
+.foot{
+  margin-top: 130px;
+  font-family:monospace;
+  text-align:center;
+  color :#db0f0f;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+   .pic img {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px)
+{
+  .other{
+    margin-left: 150px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+  .x{
+    padding:0 40px;
+  }
+
+   .pic img {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 905px)
+{
+  
+  .heads{
+
+  }
+  .logo h3{
+    
+    margin-left:30px;
+  }
+ .other{
+   margin-left: 590px;
+ }
+
+ .x{
+   padding: 0 70px;
+ }
+  .x a{
+  margin-left:30px;
+}
+
+
+
+.pic img{
+  width:600px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.cont{
+  margin-top: 10px;
+}
+
+.write h2{
+  font-size:40px;
+ 
+}
+
+.foot{
+  margin-top:40px;
+}
+
+}
+</style>
+</head>
+<body>
+<div class="heads">
+<div class ="logo">
+<a href ="/" style="text-decoration:none;">
+<h3>MAITRI</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="/about" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="/choose" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="/remedy" style="text-decoration:none;">
+Remedy </a>
+</div>
+</div>
+</div>
+
+
+<div class="main">
+<div class="pic" align="center">
+<img src="{{ url_for('static', filename = '4.jpg') }}">
+</div>
+
+
+<div class= "cont">
+<div class="write">
+<h2><span class="name"> IT'S SEPTEMBER</span><br>PCOS AWARENESS MONTH</h2>
+<h1> MAITRI helps you diagonise PCOS.50% of the women suffering from PCOS goes undiagonised and it's and alarming helath issue which if not taken care in preliminary stage can also led to cancer. </h2>
+<p><h3>What is Polycystic Ovarian Syndrome (PCOS)?</h3><br>
+Polycystic Ovary Syndrome, or PCOS, is a health condition that affects about 10 million people in the world.
+
+The exact cause is unknown, but it is considered a hormonal problem. Genetics and environmental factors are believed to be involved in the development of PCOS. It is a leading cause of female infertility and is responsible for a number of symptoms that can affect the body physically and emotionally.</p>
+
+<p><h3>PCOS Symptoms</h3><br>
+Symptoms of PCOS may begin shortly after puberty, but can also develop during the later teen years and early adulthood. Because symptoms may be attributed to other causes or go unnoticed, PCOS may go undiagnosed for some time.
+
+People with PCOS typically have irregular or missed periods as a result of not ovulating. Although some people may develop cysts on their ovaries, many people do not.
+
+Other symptoms include:
+<br>
+Weight gain<br>
+Fatigue<br>
+Unwanted hair growth <br>
+Thinning hair on the head <br>
+Infertility<br>
+Acne<br>
+Mood changes<br>
+Pelvic pain<br>
+Headaches<br>
+Sleep problems<br>
+</div>
+</div>
+
+
+</div>
+
+
+<div class ="foot">
+<p> by Dikshita Basu </p>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

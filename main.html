@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+          <link rel ="stylesheet" type = "text/css"  href =".css">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:#e42f06;
+    width: 100%;
+ 
+     
+}
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 6px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+
+
+
+.main{
+    display :flex;
+    flex-direction:column;
+}
+
+.pic{
+    align-items:center;
+  margin-top:5px;
+  padding:0 0px
+}
+.pic img{
+    width:250px;
+    border:1px solid red;
+    padding:15px
+}
+
+.cont{
+  margin-top: -80px;
+  text-align:center;
+  padding:0 48px
+}
+
+.write h2{
+  font-size:30px;
+  font-family:monospace;
+  color:#e23403;
+}
+
+span{
+  color:#FBE9E7;
+}
+
+
+.ok {
+  border: none;
+  background: rgb(212 63 14);
+    background: linear-gradient(0deg, rgb(243 57 27) 0%, rgb(194 29 12) 100%);
+    color: #fff;
+    overflow: hidden;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-transform:uppercase;
+}
+
+
+.ok:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+
+.foot{
+  margin-top: 30px;
+  font-family:monospace;
+  text-align:center;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+  .ok{
+    margin-top: 10px;
+  }
+
+  .pic img {
+    width: 280px
+  }
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 900px)
+{
+  .other{
+    margin-left: 150px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+  .x{
+    padding:0 40px;
+  }
+  .ok{
+    margin-top: 10px;
+  }
+
+  .pic img {
+    width: 430px
+  }
+  .cont{
+  margin-top: -110px;
+  padding:0 188px
+}
+
+.write h2{
+  font-size:45px;
+  }
+}
+
+@media only screen and (min-width: 905px)
+{
+  body{
+    background:url({{ url_for('static', filename = '5.svg') }}) no-repeat;
+    background-size:cover;
+
+
+  }
+  .heads{
+    background: transparent;
+
+  }
+  .logo h3{
+    color:#df1c08;
+    margin-left:30px;
+  }
+ .other{
+   margin-left: 690px;
+ }
+
+ .x{
+   padding: 0 70px;
+ }
+  .x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+.main{
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content:space-evenly;
+  margin-top:50px;
+}
+
+.pic img{
+  width:300px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.cont{
+  margin-top: 80px;
+}
+
+
+
+.write h2{
+  font-size:60px;
+  
+
+}
+
+span{
+  color:black;
+}
+
+
+.ok {
+      padding: 20px 40px;
+    border-radius: 10px;
+    text-transform:uppercase;
+}
+
+.foot{
+  margin-top:40px;
+}
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="heads">
+<div class ="logo">
+<a href ="/" style="text-decoration:none;">
+<h3>MAITRI</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="/about" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="/choose" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="/remedy" style="text-decoration:none;">
+Remedy </a>
+</div>
+</div>
+</div>
+
+
+<div class="main">
+<div class="pic" align="center">
+<img src="{{ url_for('static', filename = '2.jpg') }}">
+</div>
+
+
+<div class= "cont">
+<div class="write">
+<h2><span class="name">FIGHT PCOS BY </span><br>LOVING YOURSELF</h2>
+</div>
+<div class = "but">
+<a href ="\choose">
+ <button class="ok">Take Test</button>
+</a>
+</div>
+</div>
+
+
+</div>
+
+
+<div class ="foot">
+<p> by Dikshita Basu </p>
+</div>
+
+
+</body>
+</html>

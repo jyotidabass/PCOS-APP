@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+          <link rel ="stylesheet" type = "text/css"  href ="sol.css">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:#866abf;
+    width: 100%;
+ 
+     
+}
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+.pic img{
+    width:200px;
+    border:1px solid #866abf;
+    padding:15px
+}
+
+.pic{
+    align-items:center;
+  margin-top:5px;
+  padding:20px
+}
+
+.cont{
+  margin-top: -10px;
+  text-align:center;
+  padding:0 48px;
+    font-family:monospace;
+}
+
+.write h2{
+  font-size:20px;
+  font-family:monospace;
+  color:#866abf;
+}
+
+span{
+  color:#ca698e;
+}
+
+.cover{
+  display:flex;
+  flex-direction:column;
+  padding:
+}
+.box{
+  border:1px solid #B39DDB;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius:20px;
+}
+.foot{
+  margin-top: 130px;
+  font-family:monospace;
+  text-align:center;
+  color :#4b5ab2;
+}
+
+
+h3{
+  color: #866abf;
+}
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+   .pic img {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px)
+{
+  .other{
+    margin-left: 150px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+  .x{
+    padding:0 40px;
+  }
+
+   .pic img {
+    width: 500px;
+  }
+   .cover{
+    flex-direction:row;
+  }
+  .box{
+    width:200px;
+    padding:50px;
+    margin-left:20px;
+    margin-bottom:20px;
+  }
+}
+
+@media only screen and (min-width: 905px)
+{
+  
+  .heads{
+
+  }
+  .logo h3{
+    
+    margin-left:30px;
+  }
+ .other{
+   margin-left: 590px;
+ }
+
+ .x{
+   padding: 0 70px;
+ }
+  .x a{
+  margin-left:30px;
+}
+
+
+
+.pic img{
+  width:600px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.cont{
+  margin-top: 10px;
+}
+
+.write h2{
+  font-size:40px;
+ 
+}
+
+.foot{
+  margin-top:40px;
+}
+.cover{
+    flex-direction:row;
+    padding-left:200px;
+  }
+  .box{
+    width:300px;
+    padding:50px;
+    margin-left:40px;
+    margin-bottom:40px;
+  }
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="heads">
+<div class ="logo">
+<a href ="\" style="text-decoration:none;">
+<h3>MAITRI</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="\about" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="\choose" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="\remedy" style="text-decoration:none;">
+Remedy </a>
+</div>
+</div>
+</div>
+
+
+<div class="main">
+<div class="pic" align="center">
+<img src="{{ url_for('static', filename = '9.jpg') }}">
+</div>
+
+
+<div class= "cont">
+<div class="write">
+<h2><span class="name"> DON'T WORRY</span><br>TREAT PCOS NATURALLY</h2>
+
+<h3>Firstly if you haven't visited Doctor then go and visist one and get yourself tested , because it's high time.</h3>
+<p><h3>FOLLOW THESE SIMPLE REMEDY TO REGULARISE PERIODS</h3><br>
+<div class="cover">
+<div class="box">
+Diet changes<br>
+<hr>
+By eating the right food, you can manage your symptoms pretty well. Not consuming specific items and including much-required ones can help you deal with your symptoms well. A well-balanced diet will regulate your hormones and menstrual cycle.
+</div>
+<div class="box">
+Start the day with healthy food<br>
+<hr>
+You can start by making changes in your breakfast. Have healthy protein and fat. Your blood sugar levels must remain steady, so make sure you have your breakfast as early as you can after getting up. Include some leafy greens for nutrients and have the right carbs. DO not eat bread or any such fatty products.
+</div>
+</div>
+<div class="cover">
+<div class="box">
+Whole foods<br>
+<hr>
+Whole foods do not contain any artificial sugar or preservatives. They are as natural and unprocessed as they can be. They consist of legumes, whole grains, vegetables, and fruits, that help maintain your blood sugar.
+<br><br>
+</div>
+
+<div class="box">
+Soy it up<br>
+<hr>
+Soy acts like estrogen for your body, which helps balance hormones. However, if you have a  family history of estrogen-related cancers, you should completely avoid soy products. It may mess with your endocrine system.<br><br>
+</div>
+</div>
+<div class="cover">
+<div class="box">
+Anti-inflammatory<br>
+<hr>
+PCOS is a low-level chronic inflammation. You can add anti-inflammatory foods to your diets such as tree nuts, fatty fish, leafy greens, olive oil, and tomatoes.<br><br>
+</div>
+<div class="box">
+Balance it out!<br>
+<hr>
+It is very important to have proper consumption and intake of carbohydrates and protein. They improve energy and hormone levels. It produces insulin and regulates your body immunity. Some sources are nuts, legumes, and whole grains. Increase the amount of magnesium intake by consuming bananas, spinach, cashews and almonds.<br><br>
+</div>
+</div>
+
+
+<div class="pic" align="center">
+<img src="{{ url_for('static', filename = '11.jpg') }}">
+</div>
+<div class="cover">
+<div class="box">
+Add some fibre<br>
+<hr>
+A diet that is rich in fibre helps improve your digestion. Consume more of avocados, pears, brussels sprouts, broccoli, lima beans and lentils.
+<br><br>
+</div>
+
+<div class="box">
+Up your iron intake<br>
+<hr>
+Some women who have PCOD bleed heavily during their period. This can lead to iron deficiency or anaemia. You will have to up your iron intake by consuming more of spinach, eggs, and broccoli.
+<br><br>
+</div>
+</div>
+<div class="cover">
+<div class="box">
+Say no to caffeine<br>
+<hr>
+Coffee might save your day but it won’t save your body. It leads to various problems and complications. Instead, switch to herbal tea, green tea instead. It improves insulin resistance and helps with weight management in women who have PCOS.<br><br>
+</div>
+
+<div class="box">
+Turmeric<br>
+<hr>
+India’s most favoured flavour, this spice has an ingredient, curcumin, that works as an anti-inflammatory agent and reduces insulin resistance.
+<br><br>
+
+</div>
+</div>
+<div class="cover">
+<div class="box">
+Zinc<br>
+<hr>
+If you are finding ways on how to get pregnant with PCOS naturally, Zinc can help with that. It boosts your immune system and improves fertility. It also gets rid of excessive hair growth. Fill your diet with some seafood, tree nuts, beans, and red meat.
+<br><br>
+
+</div>
+<div class="box">
+Evening primrose oil<br>
+<hr>
+Evening primrose oil helps with irregular menstruation and painful time during periods. It also improves your cholesterol levels and gets rid of any stress you have.
+<br><br>
+
+</div>
+</div>
+<div class="cover">
+<div class="box">
+Tulsi to the rescue!<br>
+<hr>
+Holy basil, also known as tulsi relieves you of any metabolic stress. It regulates blood sugar levels and prevents weight gain.
+<br><br>
+
+</div>
+<div class="box">
+Avoid Endocrine Disruptors<br>
+<hr>
+Endocrine disruptors are chemicals that affect the normal process of the body’s natural hormones. Those women who have PCOD are very sensitive to this. There are many endocrine disruptors like bisphenol A that can affect the androgens in their bloodstream. Even some endocrine disruptors in plastics can influence those people who have reproductive diseases and obesity. It is more likely that such people pass these disorders to their children.
+<br><br>
+</div>
+</div>
+
+<div class="pic" align="center">
+<img src="{{ url_for('static', filename = '10.jpg') }}">
+</div>
+<div class="cover">
+<div class="box">
+Try Acupuncture<br>
+<hr>
+There is a lot of evidence on how acupuncture can be very useful for the proper treatment of PCOD. Even electro-acupuncture with exercise can result in improvement in sex hormone levels, menstrual frequency, and hyperandrogenism.
+<br><br>
+</div>
+
+<div class="box">
+Exercise<br>
+<hr>
+You may think that exercise and PCOD do not go hand in hand. However, the results may surprise you. If you wish to maintain a healthy weight, you must do exercise. But too much of it can cause an imbalance in your hormones.  Exercise is indeed important to maintain a healthy weight, however, excessive exercise can affect your hormones, so try some simple exercises like yoga, Pilates, light aerobics and swimming.
+<br><br>
+
+</div>
+</div>
+<div class="cover">
+<div class="box">
+Reduce stress<br>
+<hr>
+The amount of sleep you have in a day can affect your stress levels and help maintain the levels of hormones. You should at least have 9 to 10 hours of sleep per night. Avoid eating any rich or fatty foods before sleeping. With yoga, a proper sleep schedule and controlling caffeine, you can reduce your stress levels. Start taking walks and relax, practice self-care to reduce your stress as well.
+<br><br>
+
+</div>
+<div class="box">
+Take necessary precautions<br>
+<hr>
+PCOD is a complex disease and not everyone will have the same response to this treatment. So, it is of utmost importance that you have proper medical consultation for this. Some minerals should also not be consumed in excess because it may lead to other diseases. There are many supplements and probiotics that make false and extra claims. Do your fair share of research and look for more concrete information. Before anything, always consult your doctor. You should always check with your doctor before starting any alternative therapy.
+<br><br>
+
+</div>
+</div>
+<div class="cover">
+<div class="box">
+Be observant about your surroundings<br>
+<hr>
+You use toxins every day in your life, in various products such as body care lotions or handwashes. Try avoiding any such things as they have a negative effect on your immune system. Make sure to read the labels before you buy anything, and prefer making homemade products, such as vinegar, baking soda, and essential oils.<br><br>
+</p>
+</div>
+</div>
+
+<p><h3></h3><br>
+
+</div>
+</div>
+
+
+</div>
+
+
+<div class ="foot">
+<p> by Dikshita Basu </p>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+</body>
+</html>

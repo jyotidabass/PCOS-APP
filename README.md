@@ -18,7 +18,6 @@ Also I have tried for the first time to deploy 2 models in one program.
 
 ### SCREENSHOTS
 
-![](q1.PNG)
 
 ![](q2.PNG)
 
